@@ -13,7 +13,9 @@
     --linear-02: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     --linear-03: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
     --gray-01: rgba(11, 2, 35, 0.10);
+    --opacity-01: rgba(0, 0, 0, 0.05);
     --linear-04: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    --red-01: #F61C0D;
     --font-large: 45px;
     --font-weight-large: 700;
 
@@ -22,34 +24,54 @@
     margin: 0;
     padding: 0;
 }
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
 body {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    background: var(--white-01);
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+.position-relative {
+    position: relative;
+}
+.mr-20 {
+    margin-right: 1.25rem;
+}
+.ml-16 {
+    margin-left: 1rem;
+}
+.ml-32 {
+    margin-left: 2rem;
+}
 /* Navbar Styles */
 header {
     background: var(--white-01);
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    padding: 37px 0;
+    box-shadow: 0px 4px 30px 0px var(--opacity-01);
+    padding: 2.5rem 0;
 }
-.header-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo img{
-    margin-right: 20px;
-}
+
 .logo span{
     font-size: var(--font-large);
     font-weight: var(--font-weight-large);
@@ -58,31 +80,15 @@ header {
 .logo span::first-letter{
     color: var(--primary-color);
 }
-nav{
-}
 nav ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    position: relative;
     top: 5px;
-}
-nav li{
-    margin-left: 32px;
 }
 nav li:last-child {
     background-color: var(--gray-01);
-    padding: 17px 24px;
+    padding: 1rem 1.5rem;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-}
-nav li:last-child a {
-    margin-left: 1rem;
 }
 nav a {
-    text-decoration: none;
-    text-transform: capitalize;
     color: var(--dark-02);
     font-weight: 500;
 }
@@ -90,8 +96,9 @@ nav i {
     font-size: 1.5rem;
 }
 nav .fa-youtube{
-    color: #F61C0D;
+    color: var(--red-01);
 }
+/* Banner Styles */
 /* Responsive Styles */
 @media screen and (max-width: 1199.98px) {
     header {
