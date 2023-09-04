@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* Shared Styles */
+:root {
+    --dark-01: #0B0223;
+    --dark-02: #3C354F;
+    --dark-03: #534C64;
+    --indigo-01: #4EC5F7;
+    --white-01: #ffffff;
+    --primary-color: #FF42A5;
+    --white-02: rgba(255, 255, 255, 0.60);
+    --linear-01: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    --linear-02: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --linear-03: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    --linear-04: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%),
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
